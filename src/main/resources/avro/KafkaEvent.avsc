@@ -1,0 +1,43 @@
+{
+   "type":"record",
+   "name":"KafkaEvent",
+   "namespace":"com.abc.model.avro",
+   "fields":[
+      {
+         "name":"metadata",
+         "type":{
+            "name":"metadata",
+            "type":"record",
+            "fields":[
+               {
+                  "name":"correlationid",
+                  "type":"string",
+                  "doc":"this is corrleation id for transaction"
+               },
+               {
+                  "name":"subject",
+                  "type":"string",
+                  "doc":"this is subject for transaction"
+               },
+               {
+                  "name":"version",
+                  "type":"string",
+                  "doc":"this is version for transaction"
+               }
+            ]
+         }
+      },
+      {
+         "name":"name",
+         "type":"string"
+      },
+      {
+         "name":"dept",
+         "type":"string"
+      },
+      {
+         "name":"empnumber",
+         "type":"string"
+      }
+   ]
+}
